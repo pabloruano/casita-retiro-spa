@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Inglés divertido en Retiro · La Casita de Inglés</title>
+
+    <!-- Tailwind vía CDN – sin build -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuente Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      .hero-bg {
+        background-image: url("img/hero-retro.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="antialiased text-gray-800 bg-white">
+    <!-- Sticky Brand Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-4 h-14">
+        <a href="/" class="flex items-center gap-2">
+          <img src="img/logo-casita.svg" alt="Logo La Casita de Inglés" class="h-8"/>
+          <span class="font-extrabold text-orange-600">Retiro · Pacífico</span>
+        </a>
+        <a href="https://wa.me/34621070732" target="_blank" class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full text-sm shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-white" viewBox="0 0 24 24"><path d="M.5 23.5l1.7-6.1a9.9 9.9 0 1 1 4.3 3.8L.5 23.5z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-bg relative text-white text-center flex flex-col items-center justify-center" style="height:calc(100vh - 56px);">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+      <h1 class="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">¡Inglés divertido en Retiro / Pacífico!</h1>
+      <p class="relative z-10 text-lg sm:text-xl mb-4">Profesores nativos · Grupos reducidos · Play-Based Learning</p>
+      <ul class="relative z-10 flex flex-wrap justify-center gap-4 text-xs text-white/80 mb-8">
+        <li>20 años de experiencia</li>
+        <li class="hidden sm:inline">12 academias en Madrid</li>
+        <li>17 k seguidores</li>
+      </ul>
+      <div class="relative z-10 flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/34621070732?text=¡Hola!%20Quiero%20reservar%" target="_blank" class="inline-block bg-white text-orange-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full shadow-xl text-lg transition">Reserva tu clase GRATIS</a>
+        <a href="#programas" class="inline-block border-2 border-white hover:border-gray-200 text-white hover:text-gray-200 font-bold py-4 px-8 rounded-full shadow text-lg transition">Ver programas</a>
+      </div>
+    </section>
+
+    <!-- Programas -->
+    <section id="programas" class="max-w-5xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold text-center mb-12">Nuestros programas</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Home Circle -->
+        <div class="border rounded-2xl p-6 shadow hover:shadow-lg transition flex flex-col">
+          <h3 class="text-xl font-bold mb-1">Home Circle <span class="text-sm font-normal">(3–8 años)</span></h3>
+          <p class="mb-4">Nuestra experiencia estrella: 2 horas seguidas a la semana. Rotación cada 30 min en espacios de juego, creatividad y movimiento:</p>
+          <ul class="list-disc list-inside text-sm mb-4 space-y-1">
+            <li>🎨 Sala de Manualidades y Cocina</li>
+            <li>💃 Sala de Baile</li>
+            <li>🎲 Sala de Juegos de Mesa</li>
+            <li>🎭 Sala de Teatro y Yoga</li>
+          </ul>
+          <p class="text-sm mb-2">👥 Máx. 8 alumnos</p>
+          <p class="text-2xl font-extrabold text-orange-600 mb-2">99 €/mes</p>
+          <p class="text-sm text-gray-600 mb-6">L‑V 17:30–19:30 | Sáb 11:00–13:00</p>
+          <a href="https://wa.me/34621070732?text=Info%20Home%20Circle" target="_blank" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full">Info / Reserva</a>
+        </div>
+        <!-- Home Express -->
+        <div class="border rounded-2xl p-6 shadow hover:shadow-lg transition flex flex-col">
+          <h3 class="text-xl font-bold mb-1">Home Express <span class="text-sm font-normal">(3–12 años)</span></h3>
+          <p class="mb-4">1 hora semanal con cambio de actividad cada 15 min: Baile, Teatro, Manualidades y Juegos de mesa en una sola sala.</p>
+          <p class="text-2xl font-extrabold text-orange-600 mb-2">67 €/mes</p>
+          <p class="text-sm text-gray-600 mb-6">L‑V 17:30–18:30 / 18:30–19:30<br/>Sáb 11:00–12:00 / 12:00–13:00</p>
+          <a href="https://wa.me/34621070732?text=Info%20Home%20Express" target="_blank" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full">Info / Reserva</a>
+        </div>
+        <!-- Home Run -->
+        <div class="border rounded-2xl p-6 shadow hover:shadow-lg transition flex flex-col">
+          <h3 class="text-xl font-bold mb-1">Home Run <span class="text-sm font-normal">(9–13 años)</span></h3>
+          <p class="mb-4">2 horas semanales en formato rotativo. Trabajamos reading, writing, listening y speaking con actividades lúdicas inspiradas en Cambridge.</p>
+          <ul class="list-disc list-inside text-sm mb-4 space-y-1">
+            <li>🎨 Sala de Manualidades y Cocina</li>
+            <li>🎯 Sala de Baile y Juegos Activos</li>
+            <li>🗣️ Sala de Juegos de Mesa y Conversación</li>
+            <li>🎭 Sala de Teatro y Yoga</li>
+          </ul>
+          <p class="text-2xl font-extrabold text-orange-600 mb-2">99 €/mes</p>
+          <p class="text-sm text-gray-600 mb-6">L‑V 17:30–19:30 | Sáb 11:00–13:00</p>
+          <a href="https://wa.me/34621070732?text=Info%20Home%20Run" target="_blank" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full">Info / Reserva</a>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-gray-500"><strong>Descuento 10 % en hermanos</strong> (automático desde el segundo niño).</p>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-16 bg-white px-4">
+      <h2 class="text-3xl font-extrabold text-center mb-6">Únete a nuestra comunidad <span class="text-orange-600">@lacasitadeingles</span></h2>
+      <iframe src="https://cdn.lightwidget.com/widgets/abcd1234.html" class="w-full max-w-3xl mx-auto aspect-[4/3] border-0 rounded-2xl shadow" scrolling="no" allowtransparency="true"></iframe>
+      <p class="text-center mt-4 text-gray-600">17 000 familias nos siguen para ver historias diarias de nuestras clases</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-gray-50 py-16 px-4">
+      <h2 class="text-3xl font-extrabold text-center mb-12">¡Lo dicen los padres!</h2>
+      <div class="max-w-3xl mx-auto aspect-video">
+        <iframe class="w-full h-full rounded-xl shadow" src="https://www.youtube.com/embed/GbO9Z2F1pGc?rel=0" title="Testimonios La Casita de Inglés" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="max-w-5xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-extrabold text-center mb-8">¿Dónde estamos?</h2>
+      <div class="relative pb-[56.25%] h-0 rounded-2xl overflow-hidden shadow">
+        <iframe src="https://maps.google.com/maps?q=Calle%20Jose%20Sanchez%20Pescador%2010%20Madrid&t=&z=15&ie=UTF8&iwloc=&output=embed" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="relative bg-orange-500 text-white text-center py-12 px-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4">¿Listo para que tus hijos amen el inglés?</h2>
+      <p class="mb-8 text-lg md:text-xl">Abrimos grupos el <strong>1 de septiembre</strong> · ¡Plazas limitadas!</p>
+      <a href="https://wa.me/34621070732?text=¡Hola!%20Quiero%20reservar%20una%20clase%20de%20prueba%20gratuita%20en%20Retiro%20Pacífico." target="_blank" class="inline-block bg-white text-orange-600 hover(bg-gray-100) font-bold py-4 px-8 text-lg rounded-full shadow-xl transition">Reserva tu clase GRATIS</a>
+      <svg class="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 75" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,30 C360,90 720,-30 1080,30 C1260,60 1440,45 1440,45 L1440,75 L0,75 Z" fill="#ffffff"/></svg>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-6 text-sm">
+      <p>© <script>document.write(new Date().getFullYear());</script> La Casita de Inglés Retiro · <a href="https://lacasitadeingles.com/aviso-legal" target="_blank" class="underline">Aviso legal</a> | <a href="https://lacasitadeingles.com/politica-privacidad" target="_blank" class="underline">Privacidad</a></p>
+    </footer>
+  </body>
+</html>
